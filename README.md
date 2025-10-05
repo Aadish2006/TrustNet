@@ -70,16 +70,6 @@ containing labeled bot and genuine accounts.
 - Build monitoring for concept drift (bot tactics evolve).  
 - Add explainability & fairness checks.  
 
----
-
-## 👨‍💻 Team Members
-
-- Avishkar (24BCS10065)
-- Aashu (24BCS10172)
-- Pragya Tripathi (24BCS10032)
-- Aadish (24BCS10168)
-- Shiva Gupta (24BCS10461)
-
 --- 
 ## 📂 Dataset  
 
