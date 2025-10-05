@@ -9,7 +9,8 @@ The challenge: **distinguish bot accounts from genuine human users using openly 
 
 ## 🔍 Approach  
 
-**Dataset:** Used a Cresci-style benchmark dataset containing labeled bot and genuine accounts.  
+**Dataset:** Used a benchmark dataset from an established research corpus (Cresci 2017 family) curated for academic bot-detection benchmarking 
+containing labeled bot and genuine accounts.  
 
 **Preprocessing & Cleaning:**  
 - Dropped identifiers (usernames, IDs) to prevent leakage.  
@@ -22,7 +23,7 @@ The challenge: **distinguish bot accounts from genuine human users using openly 
 - Activity velocity (`statuses_per_day`, `favourites_per_day`).  
 - Boolean flags for verification, protection, etc.  
 
-**Train/Test Strategy:** Stratified split (80/20) to preserve class balance.  
+**Train/Test Splitting:** Stratified split like (80/20) to preserve class balance.  
 
 **Modeling:** Benchmarked classical ML models → Logistic Regression, KNN, Decision Tree, Random Forest, and CatBoost.  
 
@@ -33,7 +34,7 @@ The challenge: **distinguish bot accounts from genuine human users using openly 
 ## 🧠 Algorithms & Models Used  
 - **Logistic Regression** → baseline linear model  
 - **K-Nearest Neighbors (KNN)** → distance-based local patterns  
-- **Decision Tree** → interpretable but prone to overfitting  
+- **Decision Tree** → interpretable but prone to overfitting (High Variance Model) 
 - **Random Forest ✅** → best performance with high precision & recall  
 - **CatBoost** → robust ensemble, strong candidate for categorical-heavy features  
 
@@ -70,6 +71,28 @@ The challenge: **distinguish bot accounts from genuine human users using openly 
 - Add explainability & fairness checks.  
 
 ---
+
+## 👨‍💻 Team Members
+
+- Avishkar (24BCS10065)
+- Aashu (24BCS10172)
+- Pragya Tripathi (24BCS10032)
+- Aadish (24BCS10168)
+- Shiva Gupta (24BCS10461)
+
+--- 
+## 📂 Dataset  
+
+You can directly download the datasets from Google Drive:  
+
+- [📄 spam_user.csv](https://drive.google.com/file/d/1d_EiowDc-Ns5XHNAZEw7y3gC7NKx2ZXA/view?usp=drive_link)  
+- [📄 genuine_user.csv](https://drive.google.com/file/d/1d1wRSNgv14ewTIpbs-bAJmCGMuglsH3o/view?usp=drive_link)  
+
+**Source:**  
+The data originates from the **Cresci et al. (2017) Twitter Bot Dataset**, a benchmark corpus widely used for academic bot-detection research.  
+🔗 [Paper: "The Paradigm-Shift of Social Spambots"](https://arxiv.org/abs/1701.03017)  
+
+--- 
 
 ## 🛠️ How to Use (Google Colab)  
 
